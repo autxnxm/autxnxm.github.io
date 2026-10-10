@@ -1,0 +1,59 @@
+---
+---
+
+@import "{{ site.theme }}";
+
+// Color Palette
+$burnt-orange: #CC5500;
+$deep-rust: #8B4513;
+$cream: #F5F1E8;
+$charcoal: #2C2C2C;
+$moss-green: #6B8E23;
+
+// Global Styles
+body {
+  background-color: $cream;
+  color: $charcoal;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+  line-height: 1.6;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: $burnt-orange;
+  font-weight: 600;
+}
+
+h1 {
+  border-bottom: 3px solid $deep-rust;
+  padding-bottom: 0.5rem;
+}
+
+a {
+  color: $moss-green;
+  text-decoration: none;
+  
+  &:hover {
+    color: $burnt-orange;
+    text-decoration: underline;
+  }
+}
+
+hr {
+  border: none;
+  border-top: 2px solid $deep-rust;
+  margin: 2rem 0;
+}
+
+code {
+  background-color: #f0ebe3;
+  color: $deep-rust;
+  padding: 0.2rem 0.4rem;
+  border-radius: 3px;
+}
+
+blockquote {
+  border-left: 4px solid $moss-green;
+  padding-left: 1rem;
+  color: $charcoal;
+  font-style: italic;
+}
